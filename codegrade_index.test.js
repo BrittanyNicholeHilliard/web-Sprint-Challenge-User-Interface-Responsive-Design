@@ -38,8 +38,8 @@ describe('index.html', () => {
         expect(headerTitleATag.href.includes('index.html')).toEqual(true);
     });
 
-    it('renders the correct four links in header nav links div', () => {
-        const headerNavLinks = container.querySelector('header nav div');
+    it('renders the correct four links in header nav', () => {
+        const headerNavLinks = container.querySelector('header nav');
         let headerNavLinkTextArr = headerNavLinks.innerHTML.split(/<a /i);
         // shift is to get rid of initial index that splits before the a tag
         headerNavLinkTextArr.shift();
@@ -88,7 +88,7 @@ describe('index.html', () => {
         foodPicsArr.shift();
 
         expect(foodPicsArr.length).toBe(9);
-    });
+});
 
     it('renders an input and button in footer nav with appropriate text', () => {
         const footerInput = container.querySelector('footer input');
