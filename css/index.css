@@ -312,7 +312,33 @@ div {
     .gallery {
         height: auto;
     }
+    .galleryimgs {
+        width: 100vw;
+        margin-left: 0px;
+    }
+    .galleryimgs img {
+        max-width: 100vw;
+
+    }
+    .topimgs {
     
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .middleimgs {
+    
+        display: flex;
+        flex-direction: column;
+    
+    }.botimgs {
+    
+        display: flex;
+        flex-direction: column;
+    
+    }
+
     /* about us section */
 
     .about {
